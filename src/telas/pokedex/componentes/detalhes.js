@@ -2,17 +2,15 @@ import React from "react";
 import {Image, View, StyleSheet} from 'react-native';
 
 import Texto from '../../../componentes/Texto';
-import logo from '../../../../assets/logo.png';
 
-export default function Detalhes(){
+export default function Detalhes({nome, logo, nomeProfessor, descricao}){
     return <>
-    <Texto style={estilos.nome}>Pokedéx</Texto>
+    <Texto style={estilos.nome}>{nome}</Texto>
     <View style={estilos.pokebolaProfessor}>
         <Image source={logo} style={estilos.imagemPokebola}/>
-        <Texto style={estilos.nomeProfessor}>Professor Chies</Texto>
+        <Texto style={estilos.nomeProfessor}>{nomeProfessor}</Texto>
     </View>
-    <Texto style={estilos.descricao}>Saiba todas as curiosidades e 
-                características do seu pokémon favorito!</Texto>
+    <Texto style={estilos.descricao}>{descricao}</Texto>
     </>
 }
 

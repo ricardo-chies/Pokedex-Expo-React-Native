@@ -4,12 +4,12 @@ import { StyleSheet, View } from 'react-native';
 import Detalhes from './componentes/detalhes';
 import Topo from './componentes/topo';
 
-export default function Cesta(){
+export default function Cesta({topo, detalhes}){
     return <>
-        <Topo />
+        <Topo {...topo} />
 
         <View style={estilos.pokedex}>
-            <Detalhes />
+            <Detalhes {...detalhes} />
         </View>
         </>
 }

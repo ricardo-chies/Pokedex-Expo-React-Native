@@ -5,6 +5,7 @@ import { useFonts,
   Montserrat_700Bold } from "@expo-google-fonts/montserrat";
 
 import Pokedex from './src/telas/pokedex';
+import mock from './src/mocks/pokedex';
 
 export default function App() {
 const [fontCarregada] = useFonts ({
@@ -19,7 +20,7 @@ if(!fontCarregada) {
   return (
     <SafeAreaView>
       <StatusBar />
-      <Pokedex/>
+      <Pokedex {...mock} />
     </SafeAreaView>
   );
 }
