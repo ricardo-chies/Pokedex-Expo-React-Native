@@ -4,7 +4,7 @@ import { useFonts,
   Montserrat_400Regular,
   Montserrat_700Bold } from "@expo-google-fonts/montserrat";
 
-import Pokedex from './src/telas/Pokedex';
+import Pokedex from './src/telas/pokedex';
 
 export default function App() {
 const [fontCarregada] = useFonts ({
