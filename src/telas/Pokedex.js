@@ -1,6 +1,8 @@
 import React from "react";
 import { StyleSheet, Image, Dimensions, Text, View } from 'react-native';
 
+import Texto from '../componentes/Texto'
+
 import topo from '../../assets/topo.png'
 import logo from '../../assets/logo.png'
 
@@ -9,16 +11,16 @@ const width = Dimensions.get('screen').width;
 export default function Cesta(){
     return <>
         <Image source={topo} style={estilos.topo} />
-        <Text style={estilos.titulo}>Detalhe dos Pokémons</Text>
+        <Texto style={estilos.titulo}>Detalhe dos Pokémons</Texto>
 
         <View style={estilos.pokedex}>
-            <Text style={estilos.nome}>Pokedéx</Text>
+            <Texto style={estilos.nome}>Pokedéx</Texto>
             <View style={estilos.pokebolaProfessor}>
                 <Image source={logo} style={estilos.imagemPokebola}/>
-                <Text style={estilos.nomeProfessor}>Professor Chies</Text>
+                <Texto style={estilos.nomeProfessor}>Professor Chies</Texto>
             </View>
-            <Text style={estilos.descricao}>Saiba todas as curiosidades e 
-                características do seu pokémon favorito!</Text>
+            <Texto style={estilos.descricao}>Saiba todas as curiosidades e 
+                características do seu pokémon favorito!</Texto>
         </View>
         </>
 }
@@ -46,7 +48,7 @@ const estilos = StyleSheet.create({
         color:"#464646",
         fontSize: 26,
         lineHeight: 42,
-        fontWeight: "bold",
+        fontWeight: "bold"
     },
     pokebolaProfessor: {
         flexDirection: "row",
@@ -59,7 +61,7 @@ const estilos = StyleSheet.create({
     nomeProfessor: {
         fontSize: 16,
         lineHeight: 26,
-        marginLeft: 12
+        marginLeft: 12,
     },
     descricao:{
         color: "#a3a3a3",
