@@ -1,5 +1,6 @@
 import { StatusBar, SafeAreaView, View } from 'react-native';
 import React from 'react';
+import AppLoading from 'expo-app-loading';
 import { useFonts, 
   Montserrat_400Regular,
   Montserrat_700Bold } from "@expo-google-fonts/montserrat";
@@ -14,7 +15,7 @@ const [fontCarregada] = useFonts ({
 });
 
 if(!fontCarregada) {
-  return <View/>
+  return <AppLoading />
 }
 
   return (
