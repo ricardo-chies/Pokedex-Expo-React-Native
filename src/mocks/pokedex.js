@@ -12,17 +12,17 @@ import Squirtle from '../../assets/Pokemons/Squirtle.png';
 
 const pokedex = {
     topo: {
-        titulo: "Detalhes dos Pokémons",
+        titulo: "Olá Treinador!",
     },
     detalhes: {
         nome: "Pokedéx",
         logo: logo,
         nomeProfessor: "Professor Chies",
-        descricao: "Saiba todas as curiosidades e características do seu pokémon favorito!",
+        descricao: "Nos ajude a catalogar todos os Pokémons do mundo!",
         botao: "Escolher",
     },
-    itens: {
-        titulo: "Pokémons do Chies",
+    pokemons: {
+        titulo: "Pokémons Catalogados",
         lista: [
             {
               nome: "Buizel",
